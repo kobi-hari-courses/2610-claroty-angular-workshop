@@ -11,5 +11,11 @@
         "statusBar.debuggingForeground": "#F4FCF9",
         "statusBar.noFolderBackground": "#144334",
         "statusBar.noFolderForeground": "#F4FCF9"
+    },
+    "chat.tools.terminal.autoApprove": {
+        "/^npm run build$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
     }
 }

@@ -1,0 +1,14 @@
+<label>
+    @if(required()) {
+        <span>* </span> 
+    }
+    {{ label() }}
+</label>
+<ng-content />
+@if(hasMinWords()) {
+    <div class="hint">Value with at least {{effectMinWords()}} words</div>
+}
+
+@for (err of errors(); track err.kind) {
+  <div class="error">{{ err.message }}</div>
+}
